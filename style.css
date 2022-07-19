@@ -1,0 +1,262 @@
+/* ---------utilities--------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* this one only visible for tablet mode  */
+.tablet-mode{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+.tablet-mode h2{
+    display: inline;
+    background-color: #e55039;
+    padding: 10px 20px;
+}
+
+
+/* header style start here  */
+.container-header {
+    background-color: #161616;
+    width: 2021px;
+    height: 846px;
+    margin: 50px auto;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.article-header {
+    color: white;
+    width: 50%;
+    margin-left: 150px;
+}
+
+.article-header h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #e55039;
+}
+
+.article-header p {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+/* this is watch live button with flex display */
+.watch-button {
+    color: white;
+    background-color: #e55039;
+
+    display: flex;
+    flex-direction: row;
+    width: 187px;
+    height: 80px;
+    gap: 15px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 25px;
+    border-radius: 7px;
+    transition: transform 0.2s;
+    animation: sliding 0.8s ease-in 0.5s infinite alternate;
+
+}
+
+.watch-button:hover {
+    background-color: #de4028;
+    animation: pused;
+}
+
+.anchor-watch a {
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.fa-arrow-right {
+    font-size: 25px;
+    margin-top: 6px;
+    
+}
+
+/* image style sheet start from here  */
+.image-header {
+    width: 50%;
+}
+
+.image-header img {
+    width: 75%;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 116px;
+}
+
+/* animation  */
+
+@keyframes sliding {
+    from {
+        width: 187px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+/* body section start here  */
+
+.navbar-blog-container {
+    width: 2021px;
+    height: 1600px;
+    margin: 0px auto;
+    display: flex;
+    gap: 33px;
+
+}
+
+.navbar {
+    background: #161616;
+    border-radius: 19px;
+    width: 20%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.button-navbar {
+    width: 327px;
+    height: 100px;
+    background-color: #FFFF;
+    border-radius: 15px;
+    
+}
+.button-navbar a{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#red{
+    background-color: #e55039
+    
+}
+#red a{
+    color: white;
+}
+.blogs {
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.blog{
+    width: 100%;
+    height: 470px;
+    border: 2px solid rgb(232, 231, 231);
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 10px 10px 20px rgb(180, 179, 179);
+}
+.image-blog img{
+    width: 100%;
+}
+.button-blog{
+    margin-left: 25px;
+}
+
+.button-blog span{
+    font-size: 23px;
+    color: rgb(19, 19, 19);
+    background-color: #f5f4f4;
+    padding: 2px 15px;
+    
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 7px;
+    
+}
+.article-blog{
+    margin-left: 25px;
+}
+.icon-blog{
+    margin-left: 25px;
+    display: flex;
+    gap: 60px;
+    font-size: 24px;
+}
+.time{
+    display: flex;
+    gap: 17px;
+}
+.comment{
+    display: flex;
+    gap: 17px;
+}
+/* comment icon style  */
+.fa-message{
+    color: #c0bebe;
+}
+/* footer section style  */
+footer{
+    width: 100%;
+    height: 500px;
+    background: #161616;
+}
+footer h1{
+    width: 80%;
+    font-size: 70px;
+    color:#e55039;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: 0px auto 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    
+}
+
+.footer-tags{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    margin-bottom: 80px;
+
+}
+.social-media{
+    width: 40%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 40px;
+
+}
+.social-media a{
+    text-decoration: none;
+    color: white;
+}
+

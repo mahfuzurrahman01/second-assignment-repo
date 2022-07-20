@@ -1,0 +1,281 @@
+/* ---------utilities--------- */
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* this one only visible for tablet mode  */
+.tablet-mode {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+.tablet-mode h2 {
+    display: inline;
+    background-color: #e55039;
+    padding: 10px 20px;
+}
+
+
+/* header style start here  */
+.container-header {
+    background-color: #161616;
+    width: 2021px;
+    height: 846px;
+    margin: 50px auto;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.article-header {
+    color: white;
+    width: 50%;
+    margin-left: 150px;
+}
+
+.article-header h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #e55039;
+}
+
+.article-header p {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+/* this is watch live button with flex display */
+.watch-button {
+    color: white;
+    background-color: #e55039;
+    display: flex;
+    flex-direction: row;
+    width: 187px;
+    height: 80px;
+    gap: 15px;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 25px;
+    border-radius: 7px;
+    transition: transform 0.2s;
+    animation: sliding 0.8s ease-in 0.5s infinite alternate;
+
+}
+
+.watch-button:hover {
+    background-color: #de4028;
+    animation: pused;
+}
+
+.anchor-watch a {
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.fa-arrow-right {
+    font-size: 25px;
+    margin-top: 6px;
+
+}
+
+/* image style sheet start from here  */
+.image-header {
+    width: 50%;
+}
+
+.image-header img {
+    width: 75%;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 116px;
+}
+
+/* animation  */
+@keyframes tab-sliding {
+    from {
+        width: 187px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes sliding {
+    from {
+        width: 187px;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+/* body section start here  */
+
+.navbar-match-container {
+    width: 2021px;
+    margin: 0px auto;
+    display: flex;
+    gap: 33px;
+    /* background-color: #de4028; */
+
+}
+
+.navbar {
+    background: #161616;
+    border-radius: 19px;
+    width: 20%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.button-navbar {
+    width: 327px;
+    height: 100px;
+    background-color: #FFFF;
+    border-radius: 15px;
+
+}
+
+.button-navbar a {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#red {
+    background-color: #e55039
+}
+
+#red a {
+    color: white;
+}
+.matches{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    border-bottom: 200px solid transparent;
+    
+}
+.match{
+    
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 17px;
+    box-shadow: 5px 5px 10px gray;
+}
+.flags{
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0px;
+}
+.first-flag,.second-flag{
+    
+    height: 80px;
+    width: 40%;
+}
+.first-flag img{
+    width: 100%;
+}
+
+.second-flag img{
+    width: 100%;
+}
+.article-match{
+    text-align: center;
+    
+}
+.article-match h1{
+    font-size: 2.3em;
+    font-weight: 600;
+}
+.article-match p{
+    font-size: 1.5em;
+    color: gray;
+}
+
+/* -----------------
+footer section style 
+--------------------- */
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background: #161616;
+}
+
+footer h1 {
+    width: 80%;
+    font-size: 70px;
+    color: #e55039;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: 0px auto 50px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+
+}
+
+.footer-tags {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    margin-bottom: 80px;
+
+}
+
+.social-media {
+    width: 40%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 40px;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
